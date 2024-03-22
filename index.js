@@ -45,5 +45,16 @@ function calculateSum() {
     let sum = number1 + number2;
   
     // Print the result
-    document.getElementById("result").textContent = "The sum of " + number1_str + " and " + number2_str + " is: " + sum;
+    document.getElementById("result").innerHTML = "The sum of " + number1_str + " and " + number2_str + " is: " + sum;
+}
+
+
+
+//Q5 B
+  function age(){
+  let age = document.getElementById("age").value;
+  let ageString = "I am " + age.toString() + " years old";
+
+  // Update the content of the ageContainer div with the age string
+  document.getElementById("ageContainer").innerHTML = ageString;
 }
